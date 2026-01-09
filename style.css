@@ -1,0 +1,428 @@
+/* Body */
+body {
+    background-color: #0d0d0d;
+   
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  
+}
+
+/* Navbar */
+.custom-navbar {
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 40px;
+    background: rgba(170, 50, 50, 0.592);
+    backdrop-filter: blur(3px);
+    transition: 0.4s;
+}
+
+.custom-navbar.scrolled {
+    background: rgba(81, 72, 72, 0.54);
+    
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    color: #c7acc3 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    margin: 0 10px;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(190, 89, 91, 0.6);
+    border-radius: 50px;
+}
+
+
+/* HOME SECTION */
+.home-section {
+    min-height: 90vh;
+
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+/* Glass Card */
+.glass-home {
+    max-width: 1100px;
+    
+    margin: auto;
+    padding: 80px;
+    min-height: 500px;
+    background: rgba(30, 28, 28, 0.75);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Profile Image */
+.home-img {
+    width: 400px;
+    height: 440px;
+    object-fit: cover;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.home-img:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 20px 40px rgba(175, 34, 46, 0.6);
+}
+
+/* Buttons */
+.home-section .btn-danger {
+    background-color: #af222e;
+    border: none;
+}
+
+.home-section .btn-danger:hover {
+    background-color: #de9aa2;
+}
+
+
+/* About Section */
+.about-card {
+    max-width: 90%;
+    border: 1px dotted rgb(202, 186, 186);
+}
+
+.about-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border: 2px solid #38252a;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.about-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 45px rgba(183, 62, 88, 0.4);
+}
+
+
+/* Skill Card */
+.skills-container {
+    width: 70%;
+   
+    margin: 0 auto;
+   
+}
+
+
+.skill-inner {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+
+.skill-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(252, 177, 183, 0.5);
+}
+
+/* Skill Image */
+.skill-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Skill text */
+.skill p {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+/* Skill Bar */
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #754e5b;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background-color: #af222e;
+    border-radius: 3px;
+    transition: width 1s ease-in-out;
+}
+
+
+
+/* Sections */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+    padding: 80px 0;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Education Section  */
+#education {
+    width: 80%;
+    margin: 0 auto;
+  
+    padding: 80px 0;
+    color: #fff;
+}
+
+/* Cards inside Education */
+#education .card {
+    background: rgba(30, 28, 28, 0.95); /* only cards have dark background */
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#education .card:hover {
+    transform: translateY(-5px);
+   
+}
+
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95), rgba(25, 25, 25, 0.98));
+    padding: 50px 0;
+    color: #fff;
+}
+
+#contact .container {
+    max-width: 800px;
+ 
+}
+
+.contact-form-card,
+.contact-social-card {
+    border-radius: 25px;
+    padding: 40px;
+    
+}
+
+.contact-form-card {
+    background: rgba(40, 38, 38, 0.85);
+    border: 2px solid #af222e;
+    color: #eee;
+   
+}
+
+.contact-form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(175, 34, 46, 0.7);
+}
+
+
+/* Input & Button */
+#contact .form-control {
+    background: rgba(27, 22, 22, 0.3);
+    color: #fff;
+   
+    padding: 3px;
+}
+
+#contact .form-control::placeholder {
+    color: #756e6e;
+}
+
+#contact button {
+    background-color: #af222e;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background-color: #de9aa2;
+}
+
+/* ================================ */
+@media (max-width: 992px) {
+
+    /* Navbar */
+    .custom-navbar {
+        width: 80%;
+    }
+
+    /* HOME */
+    .home-section {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .glass-home {
+        margin: 60px auto;
+        padding: 50px;
+        min-height: auto;
+    }
+
+    .home-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Skills */
+    .skills-container {
+        width: 90%;
+    }
+
+    /* Education */
+    #education {
+        width: 90%;
+    }
+}
+
+
+/* =========================
+   TABLETS & PHONES (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .custom-navbar {
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+
+    /* HOME */
+    .home-section {
+        padding-top: 130px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .glass-home {
+        margin: 20px auto;
+        padding: 30px;
+    }
+
+    .home-img {
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
+    }
+
+    .home-section h1 {
+        font-size: 2rem;
+    }
+
+    .home-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .home-section p {
+        font-size: 0.95rem;
+    }
+
+    /* About */
+    .about-card {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    /* Skills */
+    .skill-inner {
+        width: 140px;
+        height: 170px;
+    }
+
+    .skill-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Contact */
+    #contact .row {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+/* =====================
+   SMALL PHONES (≤ 480px)
+   ===================== */
+@media (max-width: 480px) {
+
+    /* Navbar */
+    .custom-navbar {
+        width: 95%;
+    }
+
+    /* HOME */
+    .glass-home {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .home-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-section h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Skills */
+    .skill-inner {
+        width: 120px;
+        height: 160px;
+    }
+
+    /* Footer */
+    .footer small {
+        font-size: 0.8rem;
+    }
+}
